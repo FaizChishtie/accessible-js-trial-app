@@ -1,9 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+//import initialize from 'accessible-js';
+import stamp from 'accessible-js';
 
 function App() {
-  return (
+
+  const html = (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,8 +22,13 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div> 
   );
+
+  //initialize.initialize(html);
+  stamp();
+
+  return html;
 }
 
 export default App;
